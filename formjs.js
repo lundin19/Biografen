@@ -51,12 +51,6 @@ submit.addEventListener('click', () => {
             error(text);
             this.text = text.value;
             return false;
-        } else if (!textError(text.value)) { // If textError is not = text.value then issue this statement
-            error(text);
-            this.text = text.value;
-            let textError = document.getElementById('textError'); // Getting the textError element form the HTML
-            textError.style.display = 'block'; // displays block  so we can see it when text has an error
-            return false;
         } else {
             this.text = text.value;
             let textError = document.getElementById('textError');
