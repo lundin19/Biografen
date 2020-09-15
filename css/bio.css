@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+.bio-con {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 1%;
+  -ms-grid-columns: 20% 30% 30% 20%;
+      grid-template-columns: 20% 30% 30% 20%;
+  -ms-grid-rows: 3% 5% 5% 5%;
+      grid-template-rows: 3% 5% 5% 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-con .hbio {
+  font-weight: Bold;
+  font-size: 40px;
+  font-family: mentone, sans-serif;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  margin-left: 2%;
+}
+
+.bio-con .pbio {
+  font-family: mentone, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: 2%;
+}
+
+.bio-con .bio-img {
+  width: 99%;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.foot {
+  height: 220px;
+  background-color: #00121F;
+  color: #FEFEFE;
+  font-family: mentone, sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 15% 22% 13% 30%;
+      grid-template-columns: 20% 15% 22% 13% 30%;
+  -ms-grid-rows: 20% 15% 5%;
+      grid-template-rows: 20% 15% 5%;
+  margin-top: 18.1%;
+  padding-top: 1.5%;
+}
+
+.foot .item1 {
+  font-size: 40px;
+  font-weight: Bold;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.foot .item2 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.foot .item3 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.foot .item4 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+/*# sourceMappingURL=bio.css.map */
