@@ -106,6 +106,17 @@ $usize: 20px;
             transform: translateY(280%);
     }
 
+    #textError {
+        /*Styling*/
+            display: none;
+            font-size: .7rem;
+        /*Placemet*/
+            /*Positioning box*/
+                position: absolute;
+                top: 0;
+                transform: translateY(280%);
+        }
+
 
 /*----------------------*/
 /*#Input*/
@@ -166,7 +177,7 @@ input:placeholder-shown + .label {
 
 .label2 {
     /*Styling*/
-        padding: 0.4rem;
+        padding: 0.8rem;
         color: #646262;
         font-size: $psize;
     /*Placemet*/
@@ -185,6 +196,12 @@ input:placeholder-shown + .label {
         transition: transform 400ms;
     }
 
+
+::placeholder {
+    font-size: $psize;
+    font-family: $font;
+    font-weight: $lweight;
+}
 /*----------------------*/
 /*#Buttons*/
 /*----------------------*/
