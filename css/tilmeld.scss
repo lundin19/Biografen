@@ -1,0 +1,332 @@
+$main-color1: #00121F;
+$main-color2: #F71931;
+$main-color3: #FEFEFE;
+$sec-color1: #187CFF;
+$sec-solor2: #25FF3B;
+$font: mentone, sans-serif;
+$bweight: Bold;
+$lweight: 'light';
+$psize: 16px;
+$osize: 40px;
+$usize: 20px;
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.h11 {
+    font-family: $font;
+    font-size: $osize;
+    font-weight: $bweight;
+    position: absolute;
+    top: 8%;
+    left: 13.5%;
+}
+
+#form {
+    /*Styling*/
+        width: 1400px;
+        height: auto;
+        padding: 3rem;
+        background-color: #FCFCFC;
+        box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+        border: 1px solid black;
+        font-family: $font;
+    /*Placemet*/
+        /*Positioning box*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    /*Placemet*/
+        /*Flex*/
+            display: grid;
+    }
+    
+    .form-container {
+        width: 1300px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .field {
+    /*Styling*/
+        width: 640px;
+        border: 2px solid #000;
+        margin-bottom: 3rem;
+        margin-left: 0.2rem;
+    /*Placemet*/
+        /*Positioning box*/
+        justify-items: center;
+        align-items: center;
+           
+    }
+
+    h3 {
+        width: 100px;
+        height: 15px;
+        font-size: $usize;
+        font-weight: $bweight;
+    }
+
+    .field2 {
+        /*Styling*/
+            width: 1293px;
+            border: 2px solid #000;
+            margin-bottom: 3rem;
+        /*Placemet*/
+            /*Positioning box*/
+            justify-items: center;
+        align-items: center;
+               
+
+            h3 {
+                font-size: $usize;
+                font-weight: $bweight;
+                margin-bottom: 2rem;
+            }
+        }
+    
+    /*----------------------*/
+    /*#Errors*/
+    /*----------------------*/
+    
+    .field.error { border: 1px solid #ff1515; }
+    
+    .field .error-circle {
+    /*Styling*/
+        color: #ff1515;
+    /*Placemet*/
+        /*Positioning box*/
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0.4rem;
+    }
+    
+    #emailError {
+    /*Styling*/
+        display: none;
+        font-size: .7rem;
+    /*Placemet*/
+        /*Positioning box*/
+            position: absolute;
+            top: 0;
+            transform: translateY(280%);
+    }
+
+/*----------------------*/
+/*#Input*/
+/*----------------------*/
+.input1 {
+    width: 576px;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+}
+
+.input2 {
+    width: 576px;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+}
+
+.input3 {
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    margin-top: -5%;
+}
+
+.input4 {
+    width: 466px;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+}
+
+.input5 {
+    width: 466px;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+}
+
+.input6 {
+    width: 1290px;
+    height: 55px;
+    outline: none;
+    padding: 0.4rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+input.input3:hover {
+    background-color: $main-color1;
+}
+
+input#check.input3 {
+    width: 30px;
+}
+
+input.input3 {
+    transform: scale(2);
+    margin: 20px;
+    color: $main-color1;
+}
+
+label.label3 {
+    width: 250px;
+    border: none;
+}
+
+.label {
+/*Styling*/
+    padding: 0.8rem;
+    color: #646262;
+    font-size: $psize;
+/*Placemet*/
+    /*Positioning box*/
+    position: absolute;
+    top: 0;
+    left: 0;
+/*Transition*/
+    transform: translateY(-100%);
+    transition: transform 400ms;
+}
+
+input:placeholder-shown + .label {
+/*Transition*/
+    transform: translateY(0%);
+    transition: transform 400ms;
+}
+
+.label2 {
+    /*Styling*/
+        padding: 0.8rem;
+        color: #646262;
+        font-size: $psize;
+    /*Placemet*/
+        /*Positioning box*/
+        position: absolute;
+        top: 0;
+        left: 0;
+    /*Transition*/
+        transform: translateY(-100%);
+        transition: transform 400ms;
+    }
+    
+    input:placeholder-shown + .label2 {
+    /*Transition*/
+        transform: translateY(0%);
+        transition: transform 400ms;
+    }
+
+
+::placeholder {
+    font-size: $psize;
+    font-family: $font;
+    font-weight: $lweight;
+}
+/*----------------------*/
+/*#Buttons*/
+/*----------------------*/
+
+button {
+/*Styling*/
+    width: 470px;
+    height: 50px;
+    background-color: unset;
+    padding: .4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    margin-bottom: 1rem;
+    margin-top: 2.8rem;
+    outline: none;
+    cursor: pointer;
+/*Placemet*/
+    /*Positioning box*/
+        position: relative;
+}
+
+button:active,
+button:hover {
+/*Styling*/
+    border: unset;
+    background-color: #000;
+    color: #FCFCFC;
+}
+
+
+
+.foot {
+    height: 220px;
+    background-color: $main-color1;
+    color: $main-color3;
+    font-family: $font;
+    display: grid;
+    grid-template-columns: 20% 15% 22% 13% 30%;
+    grid-template-rows: 20% 15% 5%;
+    margin-top: 47%;
+    padding-top: 1.5%;
+
+    .item1 {
+        font-size: $osize;
+        font-weight: $bweight;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        justify-self: end;
+        align-self: center;
+    }
+
+    .item2 {
+        font-size: $psize;
+        font-weight: $lweight;
+        font-style: normal;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .item3 {
+        font-size: $psize;
+        font-weight: $lweight;
+        font-style: normal;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .item4 {
+        font-size: $psize;
+        font-weight: $lweight;
+        font-style: normal;
+        grid-column-start: 5;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+}
