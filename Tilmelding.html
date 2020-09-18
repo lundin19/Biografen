@@ -15,28 +15,29 @@
 
             <!-- <h3>Fornavn</h3> -->
             <div class="field">
-                <textarea type="text" id="name" class="input1" placeholder=" Fornavn..."></textarea> </textarea>
+                <textarea type="text" id="name" class="input" placeholder=" Fornavn..."></textarea> </textarea>
             </div>
 
             <!-- <h3>Efternavn</h3> -->
             <div class="field">
-                <textarea type="text" id="name" class="input2" placeholder=" Efternavn... "></textarea>
+                <textarea type="text" id="name" class="input" placeholder=" Efternavn... "></textarea>
             </div>
 
             <!-- <h3>Email</h3> -->
             <div class="field2">
-                <textarea type="text" id="email" class="input6" placeholder=" Email... " ></textarea>
+                <input type="text" id="email" class="input" placeholder=" Email... " ></input>
                 <div id="emailError"> *Emailen skal indeholde @ og . * </div>
             </div>
             <br><br>
             <!-- <h3>Alder</h3> -->
             <div class="field">
-                <textarea type="text" id="age" class="input4" placeholder=" DD-MM-YYYY "></textarea>
+                <textarea type="text" id="age" class="input" placeholder=" DD-MM-YYYY " onblur="ValidateDOB"></textarea>
+                <span class="error" id="lblError"></span>
             </div>
 
             <!-- <h3>Telefon</h3> -->
             <div class="field">
-                <textarea type="text" id="tlf" class="input5" placeholder=" Telefon... "></textarea>
+                <textarea type="text" id="tlf" class="input" placeholder=" Telefon... "></textarea>
             </div>
 
             <div class="field3">
@@ -45,8 +46,8 @@
             </div> <br><br>
 
             <div class="buttons">
-                <button type="submit" id="button-submit">Send</button>
-                <button type="submit" id="button-submit">Fortryd</button>
+                <button type="submit" id="button-submit" class="send">Send</button>
+                <button type="submit" id="button-submit" class="fortryd">Fortryd</button>
             </div>
         </div>
         </form>
