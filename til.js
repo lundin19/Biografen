@@ -78,19 +78,19 @@ submit.addEventListener('click', () => {
             var parts = dateString.split("/");
             var dtDOB = new Date(parts[1] + "/" + parts[0] + "/" + parts[2]);
             var dtCurrent = new Date();
-            lblError.innerHTML = "Eligibility 18 years ONLY."
-            if (dtCurrent.getFullYear() - dtDOB.getFullYear() < 18) {
+            lblError.innerHTML = "Man skal være 15 år."
+            if (dtCurrent.getFullYear() - dtDOB.getFullYear() < 15) {
                 return false;
             }
  
-            if (dtCurrent.getFullYear() - dtDOB.getFullYear() == 18) {
+            if (dtCurrent.getFullYear() - dtDOB.getFullYear() == 15) {
  
-                //CD: 11/06/2018 and DB: 15/07/2000. Will turned 18 on 15/07/2018.
+                
                 if (dtCurrent.getMonth() < dtDOB.getMonth()) {
                     return false;
                 }
                 if (dtCurrent.getMonth() == dtDOB.getMonth()) {
-                    //CD: 11/06/2018 and DB: 15/06/2000. Will turned 18 on 15/06/2018.
+                    
                     if (dtCurrent.getDate() < dtDOB.getDate()) {
                         return false;
                     }
@@ -99,13 +99,13 @@ submit.addEventListener('click', () => {
             lblError.innerHTML = "";
             return true;
         } else {
-            lblError.innerHTML = "Enter date in dd/MM/yyyy format ONLY."
+            lblError.innerHTML = "Indtast date i dd/MM/yyyy format."
             return false;
         }
     }
 
-
     // Tlf validation
+    
 
     });
 });

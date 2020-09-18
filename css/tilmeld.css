@@ -231,6 +231,12 @@ label.label3 {
   font-weight: "light";
 }
 
+input {
+  font-family: mentone, sans-serif;
+  font-size: 16px;
+  font-weight: "light";
+}
+
 /*----------------------*/
 /*#Buttons*/
 /*----------------------*/
