@@ -38,6 +38,7 @@
 }
 
 .form-container {
+  /* Containeren der indeholder field og field2 */
   width: 1100px;
   display: -ms-grid;
   display: grid;
@@ -90,14 +91,16 @@ h3 {
   border: 1px solid #ff1515;
 }
 
+/* Error color */
 .field2.error {
   border: 1px solid #ff1515;
 }
 
+/* Error color */
 .field .error-circle {
   /*Styling*/
   color: #ff1515;
-  /*Placemet*/
+  /*Placement*/
   /*Positioning box*/
   position: absolute;
   top: 0;
@@ -120,7 +123,7 @@ h3 {
   /*Styling*/
   display: none;
   font-size: .7rem;
-  /*Placemet*/
+  /*Placement*/
   /*Positioning box*/
   position: absolute;
   top: 0;
