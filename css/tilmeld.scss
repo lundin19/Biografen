@@ -286,6 +286,7 @@ button:hover {
     margin-top: 47%;
     padding-top: 1.5%;
 
+    /*Overskrift footer*/
     .item1 {
         font-size: $osize;
         font-weight: $bweight;
@@ -297,6 +298,7 @@ button:hover {
         align-self: center;
     }
 
+    /*Adresse og tlf. Footer*/
     .item2 {
         font-size: $psize;
         font-weight: $lweight;
@@ -309,6 +311,7 @@ button:hover {
         align-self: start;
     }
 
+    /*Forestillinger og senior bio*/
     .item3 {
         font-size: $psize;
         font-weight: $lweight;
@@ -321,6 +324,7 @@ button:hover {
         align-self: start;
     }
 
+    /*Info om bio*/
     .item4 {
         font-size: $psize;
         font-weight: $lweight;
@@ -330,5 +334,293 @@ button:hover {
         grid-row-start: 1;
         grid-row-end: 2;
         justify-self: center;
+    }
+}
+/*Footer mediascreen*/
+@media screen and (max-width: 600px) {
+
+    .h11 {
+        font-family: $font;
+        font-size: $osize;
+        font-weight: $bweight;
+        position: absolute;
+        top: 2%;
+        left: 29%;
+        }
+
+    #form {
+        /*Styling*/
+            width: 320px;
+            height: 530px;
+            padding: 1rem;
+            background-color: #FCFCFC;
+            box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+            border: 1px solid black;
+            font-family: $font;
+            margin-top: 2rem;
+        /*Placemet*/
+            /*Positioning box*/
+                transform: translate(-50%, -50%);
+        /*Placemet*/
+            /*Flex*/
+                display: flex;
+                flex-direction: column;
+        }
+        
+        .form-container {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-self: start;
+        }
+    
+        .field {
+        /*Styling*/
+            width: 290px;
+            border: 2px solid #000;
+            margin-bottom: 1rem;
+            
+        /*Placemet*/
+            /*Positioning box*/
+            justify-self: center;
+               
+        }
+    
+        h3 {
+            width: 100px;
+            height: 15px;
+            font-size: $usize;
+            font-weight: $bweight;
+        }
+    
+        .field2 {
+            /*Styling*/
+                width: 290px;
+                border: 2px solid #000;
+                margin-left: 0rem;
+                margin-bottom: 1rem;
+            /*Placemet*/
+                /*Positioning box*/
+                justify-self: center;
+                   
+    
+                h3 {
+                    font-size: $usize;
+                    font-weight: $bweight;
+                    margin-bottom: 2rem;
+                }
+            }
+        
+        /*----------------------*/
+        /*#Errors*/
+        /*----------------------*/
+        
+        .field.error { border: 1px solid #ff1515; }
+    
+        .field2.error { border: 1px solid #ff1515; }
+        
+        .field .error-circle {
+        /*Styling*/
+            color: #ff1515;
+        /*Placemet*/
+            /*Positioning box*/
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0.4rem;
+        }
+    
+        .field2 .error-circle {
+            /*Styling*/
+                color: #ff1515;
+            /*Placemet*/
+                /*Positioning box*/
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 0.4rem;
+            }
+        
+        #emailError {
+        /*Styling*/
+            display: none;
+            font-size: .7rem;
+        /*Placemet*/
+            /*Positioning box*/
+                position: absolute;
+                top: 0;
+                transform: translateY(280%);
+        }
+    
+    /*----------------------*/
+    /*#Input*/
+    /*----------------------*/
+    #name {
+        width: 250px;
+        height: 55px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+        justify-self: center;
+    }
+    
+    #name {
+        width:200px;
+        height: 55px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+    }
+    
+    #check {
+        width: 100px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+        margin-top: -5%;
+    }
+    
+    #age {
+        width: 200px;
+        height: 55px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+    }
+    
+    #tlf {
+        width: 200px;
+        height: 55px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+    }
+    
+    #email {
+        width: 200px;
+        height: 55px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+    }
+    
+    input.input3:hover {
+        background-color: $main-color1;
+    }
+    
+    input#check.input3 {
+        width: 30px;
+    }
+    
+    input.input3 {
+        transform: scale(2);
+        margin: 20px;
+        color: $main-color1;
+    }
+    
+    label.label3 {
+        width: 250px;
+        border: none;
+    }
+    
+    
+    ::placeholder {
+        font-size: $psize;
+        font-family: $font;
+        font-weight: $lweight;
+    }
+    
+    input {
+        font-family: $font;
+        font-size: $psize;
+        font-weight: $lweight;
+    }
+    
+    
+    /*----------------------*/
+    /*#Buttons*/
+    /*----------------------*/
+    
+    .buttons {
+        width: 250px;
+        height: 120px;
+        display: flex;
+        margin-left: 1rem;
+    
+        .send {
+            justify-self: start;
+        }
+    
+        .fortryd {  
+            justify-self: start;
+        }
+    }
+    
+    button {
+    /*Styling*/
+        width: 125px;
+        height: 56px;
+        background-color: unset;
+        padding: .4rem;
+        font-size: 1rem;
+        font-weight: 700;
+        border: 2px solid #000;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        margin-left: 1%;
+        outline: none;
+        cursor: pointer;
+    /*Placemet*/
+        /*Positioning box*/
+    }     
+    
+    button:active,
+    button:hover {
+    /*Styling*/
+        border: unset;
+        background-color: #000;
+        color: #FCFCFC;
+    }
+
+
+    .foot{
+        width: 260;
+    height: 400px;
+    background-color: $main-color1;
+    color: $main-color3;
+    font-family: $font;
+    margin-top: 170%;
+    grid-template-columns: 20% 13% 20% 13% 25%;
+    }
+
+    /*Overskrift footer*/
+    #media-item1 {
+        font-size: 24px;
+        margin-left: 30px;
+        justify-self: center;
+    }
+
+    /*Adresse og tlf. footer*/
+    #media-item2 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-left: 30px;
+    }
+
+    /*Forestillinger og senior bio*/
+    #media-item3 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-top: 20px;
+    }
+
+    /*Info om bio*/
+    #media-item4 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-top: 20px;
     }
 }
