@@ -298,5 +298,268 @@ button:hover {
 /* Responsive */
 
 @media only screen and (max-width: 601px) {
+
+    .h11 {
+        font-family: $font;
+        font-size: $osize;
+        font-weight: $bweight;
+        position: absolute;
+        top: 2%;
+        left: 27%;
+    }
     
+    #form {
+        /*Styling*/
+            width: 320px;
+            height: auto;
+            padding: 1rem;
+            background-color: #FCFCFC;
+            box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+            border: 1px solid black;
+            font-family: $font;
+        /*Placemet*/
+            /*Positioning box*/
+                transform: translate(-50%, -50%);
+        /*Placemet*/
+            /*Flex*/
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            
+            img {
+                display: none;
+                width: 50%;
+            }
+        }
+        
+        .form-container {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            margin-left: 2rem;
+        }
+        
+        .field {
+        /*Styling*/
+            width: 290px;
+            border: 2px solid #000;
+            margin-bottom: 1rem;
+        /*Placemet*/
+            /*Positioning box*/
+                position: relative;
+            h3 {
+                font-size: $usize;
+                font-weight: $bweight;
+                margin-bottom: 2rem;
+            }
+        }
+        
+        /*----------------------*/
+        /*#Errors*/
+        /*----------------------*/
+        
+        .field.error { border: 1px solid #ff1515; }
+        
+        .field .error-circle {
+        /*Styling*/
+            color: #ff1515;
+        /*Placemet*/
+            /*Positioning box*/
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0.4rem;
+        }
+        
+        #emailError {
+        /*Styling*/
+            display: none;
+            font-size: .7rem;
+        /*Placemet*/
+            /*Positioning box*/
+                position: absolute;
+                top: 0;
+                transform: translateY(280%);
+        }
+    
+        #textError {
+            /*Styling*/
+                display: none;
+                font-size: .7rem;
+            /*Placemet*/
+                /*Positioning box*/
+                    position: absolute;
+                    top: 0;
+                    transform: translateY(280%);
+            }
+    
+    
+    /*----------------------*/
+    /*#Input*/
+    /*----------------------*/
+    #email {
+        width: 200px;
+        height: 55px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+        justify-self: end;
+    }
+    
+    #text {
+        width: 285px;
+        height: 170px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+    }
+    
+    #check {
+        width: 100px;
+        border: none;
+        outline: none;
+        padding: 0.4rem;
+        margin-left: 0rem;
+    }
+    
+    input.input3:hover {
+        background-color: $main-color1;
+        cursor: pointer;
+    }
+    
+    input#check.input3 {
+        width: 30px;
+    }
+
+    input.input3 {
+        transform: scale(2);
+        margin: 20px;
+        color: $main-color1;
+    }
+
+    label.label3 {
+        width: 100px;
+        border: none;
+    }
+    
+    .label {
+    /*Styling*/
+        padding: 0.8rem;
+        color: #646262;
+        font-size: $psize;
+    /*Placemet*/
+        /*Positioning box*/
+        position: absolute;
+        top: 0;
+        left: 0;
+    /*Transition*/
+        transform: translateY(-100%);
+        transition: transform 400ms;
+    }
+    
+    input:placeholder-shown + .label {
+    /*Transition*/
+        transform: translateY(0%);
+        transition: transform 400ms;
+    }
+    
+    .label2 {
+        /*Styling*/
+            padding: 0.8rem;
+            color: #646262;
+            font-size: $psize;
+        /*Placemet*/
+            /*Positioning box*/
+            position: absolute;
+            top: 0;
+            left: 0;
+        /*Transition*/
+            transform: translateY(-100%);
+            transition: transform 400ms;
+        }
+        
+        input:placeholder-shown + .label2 {
+        /*Transition*/
+            transform: translateY(0%);
+            transition: transform 400ms;
+        }
+    
+    
+    ::placeholder {
+        font-size: $psize;
+        font-family: $font;
+        font-weight: $lweight;
+    }
+    /*----------------------*/
+    /*#Buttons*/
+    /*----------------------*/
+    
+    button {
+    /*Styling*/
+        width: 290px;
+        height: 50px;
+        background-color: unset;
+        padding: .4rem;
+        font-size: 1rem;
+        font-weight: 700;
+        border: 2px solid #000;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        outline: none;
+        cursor: pointer;
+    /*Placemet*/
+        /*Positioning box*/
+            position: relative;
+    }
+    
+    button:active,
+    button:hover {
+    /*Styling*/
+        border: unset;
+        background-color: #000;
+        color: #FCFCFC;
+    }
+
+    .foot{
+        width: 260;
+    height: 400px;
+    background-color: $main-color1;
+    color: $main-color3;
+    font-family: $font;
+    margin-top: 170%;
+    grid-template-columns: 20% 13% 20% 13% 25%;
+    }
+
+    /*Overskrift footer*/
+    #media-item1 {
+        font-size: 24px;
+        margin-left: 30px;
+        justify-self: center;
+    }
+
+    /*Adresse og tlf. footer*/
+    #media-item2 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-left: 30px;
+    }
+
+    /*Forestillinger og senior bio*/
+    #media-item3 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-top: 20px;
+    }
+
+    /*Info om bio*/
+    #media-item4 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-top: 20px;
+    }
 }

@@ -119,6 +119,150 @@ body {
 
 /* Responsive */
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 600px) {
+
+    .bio-con {
+        width: 600;
+        display: grid;
+        grid-column-gap: 1%;
+        grid-template-columns: 20% 30% 30% 20%;
+        grid-template-rows: 3% 5% 5% 5%;
+        margin-left: auto;
+        margin-right: auto;
     
+        .hbio {
+        font-weight: $bweight;
+        font-size: $osize;
+        font-family: $font;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-left: 2%;
+        }
+    
+        .pbio {
+        font-family: $font;
+        font-style: normal;
+        font-weight: 300;
+        font-size: $psize;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 2%;
+        }
+    
+        .bio-img {
+        width: 99%;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        justify-self: center;
+            align-self: center;
+        }
+    }
+    
+    
+    .foot {
+        height: 220px;
+        background-color: $main-color1;
+        color: $main-color3;
+        font-family: $font;
+        display: grid;
+        grid-template-columns: 20% 15% 22% 13% 30%;
+        grid-template-rows: 20% 15% 5%;
+        margin-top: 18.1%;
+        padding-top: 1.5%;
+    
+        .item1 {
+            font-size: $osize;
+            font-weight: $bweight;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-self: end;
+            align-self: center;
+        }
+    
+        .item2 {
+            font-size: $psize;
+            font-weight: $lweight;
+            font-style: normal;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: center;
+            align-self: start;
+        }
+    
+        .item3 {
+            font-size: $psize;
+            font-weight: $lweight;
+            font-style: normal;
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            justify-self: center;
+            align-self: start;
+        }
+    
+        .item4 {
+            font-size: $psize;
+            font-weight: $lweight;
+            font-style: normal;
+            grid-column-start: 5;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            justify-self: center;
+        }
+    }
+    
+
+
+    .foot{
+        width: 260;
+    height: 400px;
+    background-color: $main-color1;
+    color: $main-color3;
+    font-family: $font;
+    margin-top: 170%;
+    grid-template-columns: 20% 13% 20% 13% 25%;
+    }
+
+    /*Overskrift footer*/
+    #media-item1 {
+        font-size: 24px;
+        margin-left: 30px;
+        justify-self: center;
+    }
+
+    /*Adresse og tlf. footer*/
+    #media-item2 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-left: 30px;
+    }
+
+    /*Forestillinger og senior bio*/
+    #media-item3 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-top: 20px;
+    }
+
+    /*Info om bio*/
+    #media-item4 {
+        font-size: 16px;
+        font-weight: 200;
+        font-style: normal;
+        margin-top: 20px;
+    }
 }
