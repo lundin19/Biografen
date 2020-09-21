@@ -25,29 +25,29 @@
 
             <!-- <h3>Email</h3> -->
             <div class="field2">
-                <input type="text" id="email" class="input" placeholder=" Email... " ></input>
+                <input type="text" id="email" class="input" placeholder=" Email... " required></input>
                 <div id="emailError"> *Emailen skal indeholde @ og . * </div>
             </div>
             <br><br>
             <!-- <h3>Alder</h3> -->
             <div class="field">
-                <input type="text" id="age" class="input" placeholder=" DD-MM-YYYY " onblur="ValidateDOB"></input>
+                <input type="date" id="age" class="input" placeholder=" DD-MM-YYYY " onblur="ValidateDOB" required/>
                 <span class="error" id="lblError"></span>
             </div>
 
             <!-- <h3>Telefon</h3> -->
             <div class="field">
-                <input type="phonenum" id="tlf" class="input" placeholder=" Telefon... " pattern="^\d{2}-\d{2}-\d{2}-\{2}$"></input>
+                <input type="tel" id="tlf" class="input" placeholder=" Telefon... " pattern="^\d{2}-\d{2}-\d{2}-\{2}$" required/>
             </div>
 
             <div class="field3">
-            <input type="checkbox" id="check" class="input3"/>
+            <input type="checkbox" id="check" class="input3" required/>
             <label for="checkbox" class="label3">Jeg acceptere sammentykke</label>
             </div> <br><br>
 
             <div class="buttons">
                 <button type="submit" id="button-submit" class="send">Send</button>
-                <button type="submit" id="button-submit" class="fortryd">Fortryd</button>
+                <button type="reset" id="button-submit" class="fortryd">Fortryd</button>
             </div>
         </div>
         </form>
