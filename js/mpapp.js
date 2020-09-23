@@ -9,15 +9,35 @@ moviearray = [
 let accHtml = '', element;
 for (element of moviearray){
     accHtml += `<figure>
-                    <img id="ida-poster" src="/img/${element.img}" alt="Poster ${element.name}">
-                    <button id="movibutton">Bestil</button>
+                    <img id="ida-poster" src="img/${element.img}" alt="Poster ${element.name}">
+                    <button id="movibutton${element.id}">Bestil</button>
                     <figcaption class="posters-overskrift">${element.name}</figcaption>
                     <figcaption class="posters-info">${element.desc}</figcaption>
                 </figure>`;
     sessionStorage.setItem('MID'+element.id, JSON.stringify(element)); // MID = Movie Identification Data. her pakker vi det ned i kasser som vi kan åbne andre steder
 }
-document.getElementById('post').innerHTML = accHtml;
+document.getElementById('post').innerHTML = accHtml; // poster 
 
+let movibutton1 = document.getElementById("movibutton1").addEventListener('click', GTM1); // Go To Media
+function GTM1(){
+    sessionStorage.setItem('TheID', 1);
+    window.location.href = "film.html";
+}
+let movibutton2 = document.getElementById("movibutton2").addEventListener('click', GTM2); // Go To Media
+function GTM2(){
+    sessionStorage.setItem('TheID', 2);
+    window.location.href = "film.html";
+}
+let movibutton3 = document.getElementById("movibutton3").addEventListener('click', GTM3); // Go To Media
+function GTM3(){
+    sessionStorage.setItem('TheID', 3);
+    window.location.href = "film.html";
+}
+let movibutton4 = document.getElementById("movibutton4").addEventListener('click', GTM4); // Go To Media
+function GTM4(){
+    sessionStorage.setItem('TheID', 4);
+    window.location.href = "film.html";
+}
 
-MID = JSON.parse(sessionStorage.getItem("MID"+1));
-    console.log(MID);
+// MID = JSON.parse(sessionStorage.getItem("MID"+1));
+//     console.log(MID);
