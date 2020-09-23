@@ -45,20 +45,26 @@ main section .movie-info button {
   bottom: 0;
 }
 
-main section .movie-booking {
+main section .movie-booking .MBW {
   border: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin: 0;
 }
 
-main section .movie-booking .billetter h3 {
+main section .movie-booking .MBW .billetter {
+  margin: 0 auto;
+}
+
+main section .movie-booking .MBW .billetter h3 {
   display: block;
   width: 100%;
   margin: 1rem 2rem;
 }
 
-main section .movie-booking .billetter .box-wrapper {
+main section .movie-booking .MBW .billetter .box-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,12 +72,12 @@ main section .movie-booking .billetter .box-wrapper {
   margin: 2rem;
 }
 
-main section .movie-booking .billetter .box-wrapper .box1 label {
+main section .movie-booking .MBW .billetter .box-wrapper .box1 label {
   display: block;
   margin: 0 0 5px 0;
 }
 
-main section .movie-booking .billetter .box-wrapper .box1 .billet {
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet {
   margin: 0 0 1rem 0;
   border: 2px solid;
   display: -webkit-inline-box;
@@ -79,35 +85,35 @@ main section .movie-booking .billetter .box-wrapper .box1 .billet {
   display: inline-flex;
 }
 
-main section .movie-booking .billetter .box-wrapper .box1 .billet input {
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet input {
   border: none;
   padding: 5px;
 }
 
-main section .movie-booking .billetter .box-wrapper .box1 .billet p {
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet p {
   width: 45px;
   text-align: center;
   border-left: 2px solid;
   padding: 5px;
 }
 
-main section .movie-booking .billetter .box-wrapper .box1 .billet-stats {
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet-stats {
   border: 2px solid black;
 }
 
-main section .movie-booking .billetter .box-wrapper .box1 .billet-stats p {
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet-stats p {
   padding: 5px;
 }
 
-main section .movie-booking .billetter .box-wrapper .box1 .billet-stats p span {
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet-stats p span {
   float: right;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 {
   position: relative;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 .showcase {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase {
   padding: 5px 10px;
   border-radius: 5px;
   color: #777777;
@@ -121,13 +127,13 @@ main section .movie-booking .billetter .box-wrapper .box2 .showcase {
           flex-direction: column;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 .showcase.seat:not(.occupied):hover {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase.seat:not(.occupied):hover {
   cursor: default;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 .showcase li {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,32 +143,32 @@ main section .movie-booking .billetter .box-wrapper .box2 .showcase li {
   margin: 5px;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 .showcase li small {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li small {
   margin: 5px;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 .showcase li .seat {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li .seat {
   background-color: #00121f;
-  height: 28px;
-  width: 20px;
+  height: 38px;
+  width: 30px;
   margin: 3px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 .showcase li .seat.selected-demo {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li .seat.selected-demo {
   background-color: #25ff3b;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 .showcase li .seat.occupied-demo {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li .seat.occupied-demo {
   background-color: #f71931;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 .showcase li .seat.handicap-demo {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li .seat.handicap-demo {
   background-color: #187cff;
 }
 
-main section .movie-booking .billetter .box-wrapper .box2 button {
+main section .movie-booking .MBW .billetter .box-wrapper .box2 button {
   border: none;
   width: 100%;
   padding: .5rem 0;
@@ -172,17 +178,17 @@ main section .movie-booking .billetter .box-wrapper .box2 button {
   bottom: 0;
 }
 
-main section .movie-booking .sal {
+main section .movie-booking .MBW .sal {
   border-left: 2px solid black;
 }
 
-main section .movie-booking .sal .container {
+main section .movie-booking .MBW .sal .container {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   margin: 30px;
 }
 
-main section .movie-booking .sal .container .screen {
+main section .movie-booking .MBW .sal .container .screen {
   background-color: black;
   height: 50px;
   width: 100%;
@@ -193,42 +199,45 @@ main section .movie-booking .sal .container .screen {
           box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 }
 
-main section .movie-booking .sal .container .row {
+main section .movie-booking .MBW .sal .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-main section .movie-booking .sal .container .row [id^=seatID] {
+main section .movie-booking .MBW .sal .container .row [id^=seatID] {
   background-color: #00121f;
-  height: 28px;
-  width: 20px;
+  height: 38px;
+  width: 30px;
   margin: 3px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-main section .movie-booking .sal .container .row [id^=seatID].selected {
+main section .movie-booking .MBW .sal .container .row [id^=seatID].selected {
   background-color: #25ff3b;
 }
 
-main section .movie-booking .sal .container .row [id^=seatID].occupied {
+main section .movie-booking .MBW .sal .container .row [id^=seatID].occupied {
   background-color: #f71931;
 }
 
-main section .movie-booking .sal .container .row [id^=seatID].handicap {
+main section .movie-booking .MBW .sal .container .row [id^=seatID].handicap {
   background-color: #187cff;
 }
 
-main section .movie-booking .sal .container .row [id^=seatID]:nth-of-type(2) {
+main section .movie-booking .MBW .sal .container .row [id^=seatID]:nth-of-type(2) {
   margin-right: 18px;
 }
 
-main section .movie-booking .sal .container .row [id^=seatID]:nth-last-of-type(2) {
+main section .movie-booking .MBW .sal .container .row [id^=seatID]:nth-last-of-type(2) {
   margin-left: 18px;
 }
 
-main section .movie-booking .sal .container .row [id^=seatID]:not(.occupied):hover {
+main section .movie-booking .MBW .sal .container .row [id^=seatID]:not(.occupied):hover {
   cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);

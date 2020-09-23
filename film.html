@@ -17,167 +17,169 @@
             </article>
             <article class="movie-booking">
                 <h2>BESTIL BILLETTER</h2>
-                <article class="billetter">
-                    <h3>Antal personer</h3>
-                    <div class="box-wrapper">
-                        <div class="box1">
-                            <label for="">Voksen billet</label>
-                            <div class="billet">
-                                <input type="number" id="adult-num" value="0">
-                                <p id="adult-price">105.-</p>
+                <section class="MBW">
+                    <article class="billetter">
+                        <h3>Antal personer</h3>
+                        <div class="box-wrapper">
+                            <div class="box1">
+                                <label for="">Voksen billet</label>
+                                <div class="billet">
+                                    <input type="number" id="adult-num" value="0">
+                                    <p id="adult-price">105.-</p>
+                                </div>
+                                <label for="">Børne billet</label>
+                                <div class="billet">
+                                    <input type="number" id="kid-num" value="0">
+                                    <p id="kid-price">65.-</p>
+                                </div>
+                                <div class="billet-stats">
+                                    <p>Sal: <span id="bio">08</span></p>
+                                    <p>Række: <span id="row">0</span></p>                                    
+                                    <p>Sæde: <span id="seat">0</span></p>
+                                    <p>Billetter i alt: <span id="count">0</span></p>
+                                    <p>Pris i alt: <span id="total">0 kr</span></p>
+                                </div>
                             </div>
-                            <label for="">Børne billet</label>
-                            <div class="billet">
-                                <input type="number" id="kid-num" value="0">
-                                <p id="kid-price">65.-</p>
+                            <div class="box2">
+                                <ul class="showcase">
+                                    <li>
+                                        <div class="seat"></div>
+                                        <small>Frie pladser</small>
+                                    </li>
+                                    <li>
+                                        <div class="seat handicap-demo"></div>
+                                        <small>Handicap pladser</small>
+                                    </li>        
+                                    <li>
+                                        <div class="seat occupied-demo"></div>
+                                        <small>Optaget pladser</small>
+                                    </li>                                    <li>
+                                        <div class="seat selected-demo"></div>
+                                        <small>Valgt pladser</small>
+                                    </li>
+                                </ul>
+                                <button id="tester">Bestil</button>
                             </div>
-                            <div class="billet-stats">
-                                <p>Sal: <span id="bio">08</span></p>
-                                <p>Række: <span id="row">0</span></p>                                    
-                                <p>Sæde: <span id="seat">0</span></p>
-                                <p>Billetter i alt: <span id="count">0</span></p>
-                                <p>Pris i alt: <span id="total">0 kr</span></p>
+                        </div>
+                    </article>
+                    <article class="sal">
+                        <div class="container">                            
+                            <div class="screen"></div>
+                            <div class="row">
+                                <div id="seatID1"></div>
+                                <div id="seatID2"></div>
+                                <div id="seatID3"></div>
+                                <div id="seatID4"></div>
+                                <div id="seatID5"></div>
+                                <div id="seatID6"></div>
+                                <div id="seatID7"></div>
+                                <div id="seatID8"></div>
+                                <div id="seatID9"></div>
+                                <div id="seatID10"></div>
+                                <div id="seatID11"></div>
+                                <div id="seatID12"></div>
+                            </div>
+                            <div class="row">                               
+                                <div id="seatID13"></div>
+                                <div id="seatID14"></div>
+                                <div id="seatID15"></div>
+                                <div id="seatID16"></div>
+                                <div id="seatID17"></div>
+                                <div id="seatID18"></div>
+                                <div id="seatID19"></div>
+                                <div id="seatID20"></div>
+                                <div id="seatID21"></div>
+                                <div id="seatID22"></div>
+                                <div id="seatID23"></div>
+                                <div id="seatID24"></div>
+                            </div>
+                            <div class="row">
+                                <div id="seatID25"></div>
+                                <div id="seatID26"></div>
+                                <div id="seatID27"></div>
+                                <div id="seatID28"></div>
+                                <div id="seatID29"></div>
+                                <div id="seatID30"></div>
+                                <div id="seatID31"></div>
+                                <div id="seatID32"></div>
+                                <div id="seatID33"></div>
+                                <div id="seatID34"></div>
+                                <div id="seatID35"></div>
+                                <div id="seatID36"></div>
+                            </div>
+                            <div class="row">
+                                <div id="seatID37"></div>
+                                <div id="seatID38"></div>
+                                <div id="seatID39"></div>
+                                <div id="seatID40"></div>
+                                <div id="seatID41"></div>
+                                <div id="seatID42"></div>
+                                <div id="seatID43"></div>
+                                <div id="seatID44"></div>
+                                <div id="seatID45"></div>
+                                <div id="seatID46"></div>
+                                <div id="seatID47"></div>
+                                <div id="seatID48"></div>
+                            </div>
+                            <div class="row">
+                                <div id="seatID49"></div>
+                                <div id="seatID50"></div>
+                                <div id="seatID51"></div>
+                                <div id="seatID52"></div>
+                                <div id="seatID53"></div>
+                                <div id="seatID54"></div>
+                                <div id="seatID55"></div>
+                                <div id="seatID56"></div>
+                                <div id="seatID57"></div>
+                                <div id="seatID58"></div>
+                                <div id="seatID59"></div>
+                                <div id="seatID60"></div>
+                            </div>
+                            <div class="row">
+                                <div id="seatID61"></div>
+                                <div id="seatID62"></div>
+                                <div id="seatID63"></div>
+                                <div id="seatID64"></div>
+                                <div id="seatID65"></div>
+                                <div id="seatID66"></div>
+                                <div id="seatID67"></div>
+                                <div id="seatID68"></div>
+                                <div id="seatID69"></div>
+                                <div id="seatID70"></div>
+                                <div id="seatID71"></div>
+                                <div id="seatID72"></div>
+                            </div>
+                            <div class="row">
+                                <div id="seatID73"></div>
+                                <div id="seatID74"></div>
+                                <div id="seatID75"></div>
+                                <div id="seatID76"></div>
+                                <div id="seatID77"></div>
+                                <div id="seatID78"></div>
+                                <div id="seatID79"></div>
+                                <div id="seatID80"></div>
+                                <div id="seatID81"></div>
+                                <div id="seatID82"></div>
+                                <div id="seatID83"></div>
+                                <div id="seatID84"></div>
+                            </div>
+                            <div class="row">
+                                <div id="seatID85"></div>
+                                <div id="seatID86"></div>
+                                <div id="seatID87"></div>
+                                <div id="seatID88"></div>
+                                <div id="seatID89"></div>
+                                <div id="seatID90"></div>
+                                <div id="seatID91"></div>
+                                <div id="seatID92"></div>
+                                <div id="seatID93"></div>
+                                <div id="seatID94"></div>
+                                <div id="seatID95"></div>
+                                <div id="seatID96"></div>
                             </div>
                         </div>
-                        <div class="box2">
-                            <ul class="showcase">
-                                <li>
-                                    <div class="seat"></div>
-                                    <small>Frie pladser</small>
-                                </li>
-                                <li>
-                                    <div class="seat handicap-demo"></div>
-                                    <small>Handicap pladser</small>
-                                </li>        
-                                <li>
-                                    <div class="seat occupied-demo"></div>
-                                    <small>Optaget pladser</small>
-                                </li>                                    <li>
-                                    <div class="seat selected-demo"></div>
-                                    <small>Valgt pladser</small>
-                                </li>
-                            </ul>
-                            <button id="tester">Bestil</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="sal">
-                    <div class="container">                            
-                        <div class="screen"></div>
-                        <div class="row">
-                            <div id="seatID1"></div>
-                            <div id="seatID2"></div>
-                            <div id="seatID3"></div>
-                            <div id="seatID4"></div>
-                            <div id="seatID5"></div>
-                            <div id="seatID6"></div>
-                            <div id="seatID7"></div>
-                            <div id="seatID8"></div>
-                            <div id="seatID9"></div>
-                            <div id="seatID10"></div>
-                            <div id="seatID11"></div>
-                            <div id="seatID12"></div>
-                        </div>
-                        <div class="row">                               
-                            <div id="seatID13"></div>
-                            <div id="seatID14"></div>
-                            <div id="seatID15"></div>
-                            <div id="seatID16"></div>
-                            <div id="seatID17"></div>
-                            <div id="seatID18"></div>
-                            <div id="seatID19"></div>
-                            <div id="seatID20"></div>
-                            <div id="seatID21"></div>
-                            <div id="seatID22"></div>
-                            <div id="seatID23"></div>
-                            <div id="seatID24"></div>
-                        </div>
-                        <div class="row">
-                            <div id="seatID25"></div>
-                            <div id="seatID26"></div>
-                            <div id="seatID27"></div>
-                            <div id="seatID28"></div>
-                            <div id="seatID29"></div>
-                            <div id="seatID30"></div>
-                            <div id="seatID31"></div>
-                            <div id="seatID32"></div>
-                            <div id="seatID33"></div>
-                            <div id="seatID34"></div>
-                            <div id="seatID35"></div>
-                            <div id="seatID36"></div>
-                        </div>
-                        <div class="row">
-                            <div id="seatID37"></div>
-                            <div id="seatID38"></div>
-                            <div id="seatID39"></div>
-                            <div id="seatID40"></div>
-                            <div id="seatID41"></div>
-                            <div id="seatID42"></div>
-                            <div id="seatID43"></div>
-                            <div id="seatID44"></div>
-                            <div id="seatID45"></div>
-                            <div id="seatID46"></div>
-                            <div id="seatID47"></div>
-                            <div id="seatID48"></div>
-                        </div>
-                        <div class="row">
-                            <div id="seatID49"></div>
-                            <div id="seatID50"></div>
-                            <div id="seatID51"></div>
-                            <div id="seatID52"></div>
-                            <div id="seatID53"></div>
-                            <div id="seatID54"></div>
-                            <div id="seatID55"></div>
-                            <div id="seatID56"></div>
-                            <div id="seatID57"></div>
-                            <div id="seatID58"></div>
-                            <div id="seatID59"></div>
-                            <div id="seatID60"></div>
-                        </div>
-                        <div class="row">
-                            <div id="seatID61"></div>
-                            <div id="seatID62"></div>
-                            <div id="seatID63"></div>
-                            <div id="seatID64"></div>
-                            <div id="seatID65"></div>
-                            <div id="seatID66"></div>
-                            <div id="seatID67"></div>
-                            <div id="seatID68"></div>
-                            <div id="seatID69"></div>
-                            <div id="seatID70"></div>
-                            <div id="seatID71"></div>
-                            <div id="seatID72"></div>
-                        </div>
-                        <div class="row">
-                            <div id="seatID73"></div>
-                            <div id="seatID74"></div>
-                            <div id="seatID75"></div>
-                            <div id="seatID76"></div>
-                            <div id="seatID77"></div>
-                            <div id="seatID78"></div>
-                            <div id="seatID79"></div>
-                            <div id="seatID80"></div>
-                            <div id="seatID81"></div>
-                            <div id="seatID82"></div>
-                            <div id="seatID83"></div>
-                            <div id="seatID84"></div>
-                        </div>
-                        <div class="row">
-                            <div id="seatID85"></div>
-                            <div id="seatID86"></div>
-                            <div id="seatID87"></div>
-                            <div id="seatID88"></div>
-                            <div id="seatID89"></div>
-                            <div id="seatID90"></div>
-                            <div id="seatID91"></div>
-                            <div id="seatID92"></div>
-                            <div id="seatID93"></div>
-                            <div id="seatID94"></div>
-                            <div id="seatID95"></div>
-                            <div id="seatID96"></div>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </section>
             </article>
         </section>
     </main>

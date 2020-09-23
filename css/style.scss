@@ -49,144 +49,151 @@ main{
 
         }
         .movie-booking{
-            border: 2px solid black;
-            display: flex;
-            .billetter{
-                h3{
-                    display: block;
-                    width: 100%;
-                    margin: 1rem 2rem;
-                }
-                .box-wrapper{
-                    display: flex;
-                    grid-gap: 2rem;
-                    margin: 2rem;
-                    .box1{
-                        label{
-                            display: block;
-                            margin: 0 0 5px 0;
-                        }
-                        .billet{
-                            margin:  0 0 1rem 0;
-                            border: 2px solid;
-                            display: inline-flex;
-                            input{
-                                border: none;
-                                padding: 5px;
-                            }
-                            p{
-                                width: 45px;
-                                text-align: center;
-                                border-left: 2px solid;
-                                padding: 5px;
-                            }
-                        }
-                        .billet-stats{
-                            border: 2px solid black;
-                            p{
-                                padding: 5px;
-                                span{
-                                    float: right;
-                                }
-                            }
-                        }
-                    }
-                    .box2{
-                        position: relative;
-                        .showcase {
-                            padding: 5px 10px;
-                            border-radius: 5px;
-                            color: $showcase-col;
-                            list-style-type: none;
-                            display: flex;
-                            flex-direction: column;
-                            &.seat:not(.occupied):hover {
-                                cursor: default;
-                                transform: scale(1);
-                            }
-                            li {
-                                display: flex;
-                                align-items: center;
-                                margin: 5px;
-                                small {
-                                    margin: 5px;
-                                }
-                                .seat {
-                                    background-color: $standard-seat-color;
-                                    height: 28px;
-                                    width: 20px;
-                                    margin: 3px;
-                                    border-top-left-radius: 15px;
-                                    border-top-right-radius: 15px;
-                                    &.selected-demo {
-                                        background-color: $selected-seats;
-                                    }
-                                    &.occupied-demo {
-                                        background-color: $occupied-seats;
-                                    }
-                                    &.handicap-demo{
-                                        background-color: #187cff;
-                                    }
-                                }
-                            }
-                        }
-                        button{
-                            border: none;
-                            width: 100%;
-                            padding: .5rem 0;
-                            background-color: $occupied-seats;
-                            color: #fff;
-                            position: absolute;
-                            bottom: 0;
-                        }
-                    }
-                }
-            }
-            .sal{
-                border-left: 2px solid black;
-                .container {
-                    perspective: 1000px;
-                    margin: 30px;
-                    .screen {
-                        background-color: black;
-                        height: 50px;
+            .MBW{
+                border: 2px solid black;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 0;
+                .billetter{
+                   margin: 0 auto;
+                    h3{
+                        display: block;
                         width: 100%;
-                        margin: 15px 0;
-                        transform: rotateX(-45deg);
-                        box-shadow: 0 3px 10px $box-shadow-color;
+                        margin: 1rem 2rem;
                     }
-                    .row {
+                    .box-wrapper{
                         display: flex;
-                        [id^=seatID] {
-                            background-color: $standard-seat-color;
-                            height: 28px;
-                            width: 20px;
-                            margin: 3px;
-                            border-top-left-radius: 15px;
-                            border-top-right-radius: 15px;
-                            &.selected {
-                                background-color: $selected-seats;
+                        grid-gap: 2rem;
+                        margin: 2rem;
+                        .box1{
+                            label{
+                                display: block;
+                                margin: 0 0 5px 0;
                             }
-                            &.occupied {
+                            .billet{
+                                margin:  0 0 1rem 0;
+                                border: 2px solid;
+                                display: inline-flex;
+                                input{
+                                    border: none;
+                                    padding: 5px;
+                                }
+                                p{
+                                    width: 45px;
+                                    text-align: center;
+                                    border-left: 2px solid;
+                                    padding: 5px;
+                                }
+                            }
+                            .billet-stats{
+                                border: 2px solid black;
+                                p{
+                                    padding: 5px;
+                                    span{
+                                        float: right;
+                                    }
+                                }
+                            }
+                        }
+                        .box2{
+                            position: relative;
+                            .showcase {
+                                padding: 5px 10px;
+                                border-radius: 5px;
+                                color: $showcase-col;
+                                list-style-type: none;
+                                display: flex;
+                                flex-direction: column;
+                                &.seat:not(.occupied):hover {
+                                    cursor: default;
+                                    transform: scale(1);
+                                }
+                                li {
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 5px;
+                                    small {
+                                        margin: 5px;
+                                    }
+                                    .seat {
+                                        background-color: $standard-seat-color;
+                                        height: 38px;
+                                        width: 30px;
+                                        margin: 3px;
+                                        border-top-left-radius: 15px;
+                                        border-top-right-radius: 15px;
+                                        &.selected-demo {
+                                            background-color: $selected-seats;
+                                        }
+                                        &.occupied-demo {
+                                            background-color: $occupied-seats;
+                                        }
+                                        &.handicap-demo{
+                                            background-color: #187cff;
+                                        }
+                                    }
+                                }
+                            }
+                            button{
+                                border: none;
+                                width: 100%;
+                                padding: .5rem 0;
                                 background-color: $occupied-seats;
+                                color: #fff;
+                                position: absolute;
+                                bottom: 0;
                             }
-                            &.handicap{
-                                background-color: #187cff;
-                            }
-                            &:nth-of-type(2) {
-                                margin-right: 18px;
-                            }
-                            &:nth-last-of-type(2) {
-                                margin-left: 18px;
-                            }
-                            &:not(.occupied):hover {
-                                cursor: pointer;
-                                transform: scale(1.2);
+                        }
+                    }
+                }
+                .sal{
+                    border-left: 2px solid black;
+                    .container {
+                        perspective: 1000px;
+                        margin: 30px;
+                        .screen {
+                            background-color: black;
+                            height: 50px;
+                            width: 100%;
+                            margin: 15px 0;
+                            transform: rotateX(-45deg);
+                            box-shadow: 0 3px 10px $box-shadow-color;
+                        }
+                        .row {
+                            display: flex;
+                            justify-content: center;
+                            [id^=seatID] {
+                                background-color: $standard-seat-color;
+                                height: 38px;
+                                width: 30px;
+                                margin: 3px;
+                                border-top-left-radius: 15px;
+                                border-top-right-radius: 15px;
+                                &.selected {
+                                    background-color: $selected-seats;
+                                }
+                                &.occupied {
+                                    background-color: $occupied-seats;
+                                }
+                                &.handicap{
+                                    background-color: #187cff;
+                                }
+                                &:nth-of-type(2) {
+                                    margin-right: 18px;
+                                }
+                                &:nth-last-of-type(2) {
+                                    margin-left: 18px;
+                                }
+                                &:not(.occupied):hover {
+                                    cursor: pointer;
+                                    transform: scale(1.2);
+                                }
                             }
                         }
                     }
                 }
             }
+            
         }
     }
 }
