@@ -1,0 +1,484 @@
+@import url("https://use.typekit.net/xdx6tqt.css");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: mentone, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "mentone";
+}
+
+header p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+}
+
+header nav {
+  background-color: #f71931;
+  position: relative;
+  padding: 0 0 0 50px;
+}
+
+header nav:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 75px solid black;
+  border-right: 50px solid #f71931;
+  width: 0;
+}
+
+header nav .dems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+header nav .dems label {
+  font-size: 2rem;
+  color: white;
+}
+
+header nav .dems #checkbox {
+  display: none;
+}
+
+header nav .dems a {
+  text-decoration: none;
+}
+
+header nav ul {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #f71931;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 70px 0 0 2.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+main .trash-container {
+  width: 100%;
+  position: relative;
+}
+
+main .trash-container h1 {
+  color: white;
+  position: absolute;
+  font-size: 8rem;
+  bottom: 15rem;
+  left: 3rem;
+}
+
+main .trash-container p {
+  position: absolute;
+  color: #FEFEFE;
+  font-size: 16px;
+  bottom: 8rem;
+  left: 3rem;
+}
+
+main .trash-container button {
+  width: 110px;
+  height: 40px;
+  background-color: #F71931;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+main .trash-container img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #Aktuel-film {
+  margin: 1rem 0 0 10rem;
+}
+
+main .poster-forside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  margin: 1rem 10rem;
+}
+
+main .poster-forside div figure {
+  position: relative;
+}
+
+main .poster-forside div figure img {
+  width: 100%;
+}
+
+main .poster-forside div figure button {
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+  background-color: #F71931;
+  border: none;
+  padding: .5rem 1rem;
+  color: white;
+}
+
+main section {
+  margin: 2rem 10rem 0 10rem;
+}
+
+main section .movie-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  position: relative;
+  grid-gap: 4rem;
+}
+
+main section .movie-info .cover {
+  width: 100%;
+}
+
+main section .movie-info h2 {
+  margin: 0 0 1rem 0;
+}
+
+main section .movie-info .r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+}
+
+main section .movie-info button {
+  border: none;
+  width: 180px;
+  padding: .5rem 0;
+  background-color: #f71931;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+main section .movie-booking .MBW {
+  border: 2px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+}
+
+main section .movie-booking .MBW .billetter {
+  margin: 0 auto;
+}
+
+main section .movie-booking .MBW .billetter h3 {
+  display: block;
+  width: 100%;
+  margin: 1rem 2rem;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box1 label {
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet {
+  margin: 0 0 1rem 0;
+  border: 2px solid;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet input {
+  border: none;
+  padding: 5px;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet p {
+  width: 45px;
+  text-align: center;
+  border-left: 2px solid;
+  padding: 5px;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet-stats {
+  border: 2px solid black;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet-stats p {
+  padding: 5px;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box1 .billet-stats p span {
+  float: right;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 {
+  position: relative;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777777;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase.seat:not(.occupied):hover {
+  cursor: default;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li small {
+  margin: 5px;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li .seat {
+  background-color: #00121f;
+  height: 38px;
+  width: 30px;
+  margin: 3px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li .seat.selected-demo {
+  background-color: #25ff3b;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li .seat.occupied-demo {
+  background-color: #f71931;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 .showcase li .seat.handicap-demo {
+  background-color: #187cff;
+}
+
+main section .movie-booking .MBW .billetter .box-wrapper .box2 button {
+  border: none;
+  width: 100%;
+  padding: .5rem 0;
+  background-color: #f71931;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+main section .movie-booking .MBW .sal {
+  border-left: 2px solid black;
+}
+
+main section .movie-booking .MBW .sal .container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 30px;
+}
+
+main section .movie-booking .MBW .sal .container .screen {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  margin: 15px 0;
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+  -webkit-box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+main section .movie-booking .MBW .sal .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .movie-booking .MBW .sal .container .row [id^=seatID] {
+  background-color: #00121f;
+  height: 38px;
+  width: 30px;
+  margin: 3px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+main section .movie-booking .MBW .sal .container .row [id^=seatID].selected {
+  background-color: #25ff3b;
+}
+
+main section .movie-booking .MBW .sal .container .row [id^=seatID].occupied {
+  background-color: #f71931;
+}
+
+main section .movie-booking .MBW .sal .container .row [id^=seatID].handicap {
+  background-color: #187cff;
+}
+
+main section .movie-booking .MBW .sal .container .row [id^=seatID]:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+main section .movie-booking .MBW .sal .container .row [id^=seatID]:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+main section .movie-booking .MBW .sal .container .row [id^=seatID]:not(.occupied):hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.foot {
+  height: 220px;
+  background-color: #00121F;
+  color: #FEFEFE;
+  font-family: "mentone";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 15% 22% 13% 30%;
+      grid-template-columns: 20% 15% 22% 13% 30%;
+  -ms-grid-rows: 20% 15% 5%;
+      grid-template-rows: 20% 15% 5%;
+  margin-top: 47%;
+  padding-top: 1.5%;
+  /*Overskrift footer*/
+  /*Adresse og tlf. Footer*/
+  /*Forestillinger og senior bio*/
+  /*Info om bio*/
+}
+
+.foot .item1 {
+  font-size: 40px;
+  font-weight: Bold;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.foot .item2 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.foot .item3 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.foot .item4 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+/*# sourceMappingURL=style.css.map */
