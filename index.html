@@ -4,68 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <menu>
-            <p>Aalborg Biograf.</p>
-            <nav>
-                <input type="checkbox" id="checkbox1" />
-                <label for="checkbox1">
-                <p>Login | tilmeld </p>
-                <ul>
-                    <li><a href="">Om Biografen</a></li>
-                    <li><a href="">Film</a></li>
-                    <li><a href="">Tilmelding</a></li>
-                    <li><a href="">Bestil billet</a></li>
-                    <li><a href="">Kontakt os</a></li>
-                </ul>
-                <span class="toggle">☰</span>
-                </label>
-            </nav>
-        </menu>
+        <p>Aalborg Biograf.</p>
+        <nav>
+            <div class="dems">
+                <input type="checkbox" id="checkbox" />
+                <a href=""><p>Login</p></a><p>|</p><a href="#"><p>Tilmeld</p></a>
+                <label for="checkbox">☰</label>
+            </div>
+            <ul id="ul">
+                <li><a href="">Om Biografen</a></li>
+                <li><a href="#Aktuel-film">Film</a></li>
+                <li><a href="">Tilmelding</a></li>
+                <li><a href="">Bestil billet</a></li>
+                <li><a href="">Kontakt os</a></li>
+            </ul>
+        </nav>
     </header>
      <!-- Hero -->
-     <div class="trash-container">
-        <h1 id="trash-overskrift">Trash</h1>
-        <p id="trash-text">"Trash" is a solid fun, not particuarly great, but it will definitley do <br> 
-            justice for one evening. The settings are fresh and kinda exciting, <br>
-            three young leads are good here, with some minor support from <br>
-            two Hollywood heabyweights. Overall, this picture isn't anything <br>
-            really special, but is's a fine film. 
-        </p>
-        <a href="#"><button id="btn-bestil">Bestil</button></a>
-         </div>
-        <img id="trash-img" src="img/Trash.jpg" alt="">
-        <!-- Her kommer aktuel filmene -->
-        <h2 id="Aktuel-film">AKTUELLE FILM</h2>
-        <section class="poster-forside" id="post">
-
-        </section>
-
-        <footer>
-        <div class="foot">
-            <h2 class="item1" id="media-item1">Aalborg Biograf</h2>
-            <p class="item2" id="media-item2">
-                Biografen <br>
-                Haveje 33-35 - 1840 Avedøre
+    <main>
+        <div class="trash-container">
+            <h1>Trash</h1>
+            <p>"Trash" is a solid fun, not particuarly great, but it will definitley do <br> 
+                justice for one evening. The settings are fresh and kinda exciting, <br>
+                three young leads are good here, with some minor support from <br>
+                two Hollywood heabyweights. Overall, this picture isn't anything <br>
+                really special, but is's a fine film. 
             </p>
-            <p class="item3" id="media-item3">
-                Forestillinger:<br>
-                Senior Bio: Man.- Tor.: 14.00 - 16.00<br><br>
-                Første Forestilling:    16.15 - 18.00<br>
-                Anden Forestilling: 18.30 - 2 1.00<br>
-                Trejde Forestilling: 21.15 - 22.00<br><br>
-                Fred. lørd. Midnat: 22.30 - 02.00
-            </p>
-            <p class="item4" id="media-item4">
-                55 33 23 16 - Billettelefonen er åben 30 min før dagens første forestilling. <br><br>
-                E-mail: Biografen@mail.dk<br><br>
-                Køb billetter online via: www.kino.dk
-            </p>
+            <button>Bestil</button>
+            <img src="img/Trash.jpg" alt="">
         </div>
+           
+            <!-- Her kommer aktuel filmene -->
+            <h2 id="Aktuel-film">AKTUELLE FILM</h2>
+            <section class="poster-forside" id="post">
+    
+            </section>
+    
+            <footer>
+            <div class="foot">
+                <h2 class="item1" id="media-item1">Aalborg Biograf</h2>
+                <p class="item2" id="media-item2">
+                    Biografen <br>
+                    Haveje 33-35 - 1840 Avedøre
+                </p>
+                <p class="item3" id="media-item3">
+                    Forestillinger:<br>
+                    Senior Bio: Man.- Tor.: 14.00 - 16.00<br><br>
+                    Første Forestilling:    16.15 - 18.00<br>
+                    Anden Forestilling: 18.30 - 2 1.00<br>
+                    Trejde Forestilling: 21.15 - 22.00<br><br>
+                    Fred. lørd. Midnat: 22.30 - 02.00
+                </p>
+                <p class="item4" id="media-item4">
+                    55 33 23 16 - Billettelefonen er åben 30 min før dagens første forestilling. <br><br>
+                    E-mail: Biografen@mail.dk<br><br>
+                    Køb billetter online via: www.kino.dk
+                </p>
+        </div>
+    </main>
     </footer>
     <script src="js/mpapp.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
