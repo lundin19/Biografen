@@ -1,1 +1,452 @@
 /* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+@import url("https://use.typekit.net/xdx6tqt.css");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "mentone";
+}
+
+menu {
+  width: 100%;
+  height: 70px;
+  background-color: #00121f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+menu p {
+  color: #fefefe;
+  font-size: 40px;
+  line-height: 70px;
+  margin-left: 3rem;
+}
+
+menu nav {
+  height: 70px;
+  width: 420px;
+  background-color: #F71931;
+  position: relative;
+}
+
+menu nav:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 75px solid #00121f;
+  border-right: 50px solid #F71931;
+  width: 0;
+}
+
+menu nav p {
+  text-align: center;
+  font-size: 30px;
+}
+
+menu nav ul {
+  background-color: #F71931;
+  width: 370px;
+  height: 100vh;
+  float: right;
+  padding-top: 70px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+menu nav ul li {
+  list-style: none;
+  margin: 3rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+menu nav ul li a {
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+#checkbox1,
+span.toggle {
+  display: none;
+}
+
+span.toggle {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  color: white;
+  z-index: 2;
+  -webkit-transform: translate(-5%, 5%);
+          transform: translate(-5%, 5%);
+  text-align: center;
+  clear: both;
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  background-color: red;
+}
+
+.toggle:active {
+  color: white;
+}
+
+.toggle:focus {
+  color: white;
+}
+
+#checkbox1:checked + label .demo li {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .7s linear;
+  transition: all .7s linear;
+}
+
+#checkbox1:checked + label .demo {
+  height: 300px;
+}
+
+/*Bestil knappen hvor der er link i fjerne stregen under teksten*/
+a {
+  text-decoration: none;
+}
+
+/*Trash billedet på forsiden*/
+#trash-img {
+  width: 1920px;
+}
+
+/*Trash overskrift på billedet - forsiden*/
+#trash-overskrift {
+  position: absolute;
+  margin-top: 420px;
+  font-size: 40px;
+  color: #FEFEFE;
+  font-weight: bold;
+}
+
+/*Info omkring trash på billedet - forsiden*/
+#trash-text {
+  position: absolute;
+  color: #FEFEFE;
+  margin-top: 470px;
+  font-size: 20px;
+}
+
+/*Rykker teksten på billedet ind ad - forsiden*/
+.trash-container {
+  padding-left: 30px;
+}
+
+/*Bestil knappen på billedet - forsiden*/
+#btn-bestil {
+  background-color: #f71931;
+  width: 110px;
+  height: 40px;
+  border: #f71931;
+  color: #FEFEFE;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 600px;
+  cursor: pointer;
+}
+
+/*Aktuelle film*/
+/*Overskrift aktuelle film - forsiden*/
+#Aktuel-film {
+  padding-left: 540px;
+  margin-top: 10px;
+}
+
+/*Posters lavet med grid 4*auto og med mellemrum mellem posters - forsiden*/
+.poster-forside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.posters-bestil {
+  color: #FEFEFE;
+  font-size: 16px;
+}
+
+/*Højde få hver enkelt billede med 300px - forsiden*/
+/*Trash-poster*/
+#trash-poster {
+  height: 300px;
+  padding-top: 10px;
+}
+
+/*Bestil knap oven på trash poster*/
+#trash-bestil {
+  background-color: #f71931;
+  border: #f71931;
+  cursor: pointer;
+  width: 70px;
+  position: absolute;
+  top: 1660px;
+  left: 635px;
+}
+
+/*Citizenfour-poster*/
+#citizenfour-poster {
+  height: 300px;
+  padding-top: 10px;
+}
+
+/*Citizenfour bestil knap*/
+#citizenfour-bestil {
+  background-color: #f71931;
+  border: #f71931;
+  cursor: pointer;
+  width: 70px;
+  position: absolute;
+  top: 1660px;
+  left: 840px;
+}
+
+/*Ida poster*/
+#ida-poster {
+  height: 320px;
+}
+
+/*Ida bestil knap*/
+#ida-bestil {
+  background-color: #f71931;
+  border: #f71931;
+  cursor: pointer;
+  width: 70px;
+  position: absolute;
+  top: 1660px;
+  left: 1080px;
+}
+
+/*Riot poster*/
+#riot-poster {
+  height: 300px;
+  padding-top: 10px;
+}
+
+/*Riot bestil knap*/
+#riot-bestil {
+  background-color: #f71931;
+  border: #f71931;
+  cursor: pointer;
+  width: 70px;
+  position: absolute;
+  top: 1660px;
+  left: 1290px;
+}
+
+/*Overskriften under hver poster, har den samme class så de kan få en fed overskrift*/
+.posters-overskrift {
+  font-weight: bold;
+}
+
+/*Info teksten under hver poster, så de har samme størrelse*/
+.posters-info {
+  font-size: 16px;
+}
+
+/*Responsiv mobil*/
+@media screen and (max-width: 600px) {
+  /*Trash img*/
+  #trash-img {
+    width: 520px;
+  }
+  /*Overskrift trash på billedet*/
+  #trash-overskrift {
+    position: absolute;
+    margin-top: 70px;
+    font-size: 30px;
+    color: #FEFEFE;
+    font-weight: bold;
+  }
+  /*info teststen omkring trash på billedet*/
+  #trash-text {
+    position: absolute;
+    color: #FEFEFE;
+    margin-top: 110px;
+    font-size: 16px;
+  }
+  /*Bestil knappen*/
+  #btn-bestil {
+    width: 95px;
+    height: 30px;
+    position: absolute;
+    margin-top: 300px;
+    cursor: pointer;
+  }
+  /*De 4 posters på forsiden i grid, men med 2*auto i stedet få de 4*auto*/
+  .poster-forside {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    justify-items: center;
+    margin-left: 25px;
+  }
+  /*Overskriften aktuelle film*/
+  #Aktuel-film {
+    padding-left: 140px;
+  }
+  /*Trash bestil knappen som ligger under billedet i responsiv*/
+  #trash-bestil {
+    position: static;
+  }
+  /*Citixenfour bestil knappen, som ligger under billedet i responsiv*/
+  #citizenfour-bestil {
+    position: static;
+  }
+  /*Ida bestil knappen, som ligger under billedet i repsonsiv*/
+  #ida-bestil {
+    position: static;
+  }
+  /*Riot bestil knappen, som ligger under billedet i responsiv*/
+  #riot-bestil {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+/*Footer*/
+/*Div omkring footer der indeler i grid*/
+.foot {
+  height: 220px;
+  background-color: #00121F;
+  color: #FEFEFE;
+  font-family: "mentone";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 15% 22% 13% 30%;
+      grid-template-columns: 20% 15% 22% 13% 30%;
+  -ms-grid-rows: 20% 15% 5%;
+      grid-template-rows: 20% 15% 5%;
+  margin-top: 47%;
+  padding-top: 1.5%;
+  /*Overskrift footer*/
+  /*Adresse og tlf. Footer*/
+  /*Forestillinger og senior bio*/
+  /*Info om bio*/
+}
+
+.foot .item1 {
+  font-size: 40px;
+  font-weight: Bold;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.foot .item2 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.foot .item3 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.foot .item4 {
+  font-size: 16px;
+  font-weight: "light";
+  font-style: normal;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+/*Footer mediascreen*/
+@media screen and (max-width: 600px) {
+  .foot {
+    height: 400px;
+    background-color: #00121F;
+    color: #FEFEFE;
+    font-family: "mentone";
+    margin-top: 10%;
+  }
+  /*Overskrift footer*/
+  #media-item1 {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  /*Adresse og tlf. footer*/
+  #media-item2 {
+    font-size: 16px;
+    font-weight: "light";
+    font-style: normal;
+    margin-left: 30px;
+  }
+  /*Forestillinger og senior bio*/
+  #media-item3 {
+    font-size: 16px;
+    font-weight: "light";
+    font-style: normal;
+    margin-top: 20px;
+  }
+  /*Info om bio*/
+  #media-item4 {
+    font-size: 16px;
+    font-weight: "light";
+    font-style: normal;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
